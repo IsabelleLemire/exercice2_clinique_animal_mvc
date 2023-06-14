@@ -39,7 +39,7 @@
     <div class="container">
         <h1>Liste des Animaux</h1>
 
-        <a href="ajout_animal.php" class="btn btn-primary">Ajouter un animal</a>
+        <a href="ajout_proprietaire.php" class="btn btn-primary">Ajouter un proprietaire</a>
 
         <?php
           $controllerAnimaux=new ControlleurAnimaux;
