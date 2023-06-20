@@ -31,6 +31,9 @@
             <li class="nav-item">
               <a class="nav-link" href="rendez-vous.php">Rendez-vous</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proprietaire.php">Propriétaires</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -38,9 +41,6 @@
 
     <div class="container">
         <h1>Liste des Animaux</h1>
-
-        <a href="ajout_animal.php" class="btn btn-primary">Ajouter un animal</a>
-
         <?php
           $controllerAnimaux=new ControlleurAnimaux;
           $controllerAnimaux->afficherTableau();
