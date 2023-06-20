@@ -31,6 +31,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="rendez-vous.php">Rendez-vous</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proprietaires.php">Propriétaires</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -38,8 +41,6 @@
 
     <div class="container-fluid width-rv">
       <h1>Liste des rendez-vous</h1>
-
-      <a href="#" class="btn btn-primary">Ajouter un rendez-vous</a>
 
       <?php
           $controllerRendezVous=new ControlleurRendezVous;
