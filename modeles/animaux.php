@@ -35,8 +35,9 @@ class modele_animaux {
         $liste = [];
         $mysqli = self::connecter();
 
-        $resultatRequete = $mysqli->query("SELECT animaux.nom_animal, types_animaux.type_animal, proprietaires_animaux.prenom, proprietaires_animaux.nom, proprietaires_animaux.telephone 
-        FROM animaux INNER JOIN proprietaires_animaux ON proprietaires_animaux.id = animaux.fk_proprietaire_animal INNER JOIN types_animaux ON types_animaux.id = animaux.fk_type_animal");
+        $resultatRequete = $mysqli->query("SELECT animaux.id, animaux.nom_animal, types_animaux.type_animal, proprietaires_animaux.prenom, proprietaires_animaux.nom, proprietaires_animaux.telephone 
+        FROM animaux INNER JOIN proprietaires_animaux ON proprietaires_animaux.id = animaux.fk_proprietaire_animal INNER JOIN types_animaux ON types_animaux.id = animaux.fk_type_animal
+        ");
 
         foreach ($resultatRequete as $enregistrement) {
             $liste [] = new modele_animaux($enregistrement['id'], $enregistrement['nom_animal'], $enregistrement['type_animal'], $enregistrement['nom'], $enregistrement['prenom'], $enregistrement['telephone']);
