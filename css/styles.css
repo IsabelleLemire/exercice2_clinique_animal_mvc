@@ -20,6 +20,15 @@ body{
 
 .card {
 	margin-bottom: 25px;
+	width: 0 auto;
+	padding: 25px;
+	max-width: 50%;
+	
+}
+
+.card img {
+	width: 25%;
+	margin-bottom: 25px;
 }
 
 .width-rv {
